@@ -1,0 +1,8 @@
+f=open('practice.txt','w')
+f.write("hi everyone\nwe are learning file I/O using python\nwe enjoy doing python")
+f=open('practice.txt','r')
+data=f.read()
+newdata=data.replace('python','java')
+print(newdata)
+f=open('practice.txt','w')
+f.write(newdata)
